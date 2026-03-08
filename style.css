@@ -17,7 +17,7 @@ body,
   border-radius: 16px;
   align-items: center;
   gap: 56px;
-  position: relative;
+  /* position: relative; */
   max-height: 213px;
   max-width: 1284px;
   margin: 0 auto;
@@ -34,6 +34,10 @@ body,
   top: -14px;
 }
 
+.image-stub {
+  display: none;
+}
+
 .section-16-right {
   display: flex;
   flex-direction: column;
@@ -46,7 +50,7 @@ body,
 .section-16-text,
 .section-16-more {
   color: rgba(255, 255, 255, 1);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-16-title {
@@ -71,14 +75,19 @@ body,
   text-decoration: none;
 }
 
+.background-image-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
 .section-16-background-image {
   background-image: url(img/section16/compass-and-paper.png);
   width: 444px;
   height: 354px;
   background-repeat: no-repeat;
   position: absolute;
-  top: -30px;
-  right: -325px;
+  top: -187px;
+  right: -319px;
 }
 
 /* section-16 end */
