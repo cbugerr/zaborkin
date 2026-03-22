@@ -8,6 +8,12 @@ body,
 
 /* section 15 start  */
 
+.section-15 {
+  padding-inline: 39px;
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
 .section-15__container {
   max-width: 1285px;
   margin: 0 auto;
@@ -38,7 +44,6 @@ body,
     13px 12px 7px 0 rgba(0, 0, 0, 0.01),
     20px 19px 8px 0 rgba(0, 0, 0, 0);
   padding: 32px 24px;
-  /* height: 395px; */
 }
 
 .section-15__card form {
@@ -248,6 +253,7 @@ body,
   padding: 6px 41px;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 52px;
   border-radius: 8px;
   border: none;
@@ -318,9 +324,9 @@ label[for="auto"] {
   border-radius: 16px;
   align-items: center;
   gap: 56px;
-  /* position: relative; */
+
   max-height: 213px;
-  max-width: 1284px;
+  max-width: 1285px;
   margin: 0 auto;
 }
 
@@ -434,6 +440,37 @@ label[for="auto"] {
   /* section-16 end */
 }
 
+@media screen and (max-width: 1199px) {
+  /* section-15 start  */
+  .section-15__title {
+    font-size: 24px;
+  }
+
+  .section-15__card-price {
+    width: 200px;
+  }
+
+  .section-15__card-price h3 {
+    font-size: 26px;
+  }
+
+  .section-15__order p,
+  .section-15__cam1,
+  .section-15__cam2 {
+    display: none;
+  }
+
+  .section-15__order {
+    padding: 0;
+  }
+
+  .section-15 {
+    padding-inline: 24px;
+  }
+
+  /* section-15 end  */
+}
+
 @media screen and (max-width: 900px) {
   /* section-16 start */
   .section-16-container {
@@ -464,6 +501,19 @@ label[for="auto"] {
   }
   /* section-16 end */
 }
+
+@media screen and (max-width: 847px) {
+  /* section-15 start */
+  .section-15__card:nth-child(n + 3) {
+    display: none;
+  }
+
+  .section-15 {
+    padding-inline: 0;
+  }
+  /* section-15 end  */
+}
+
 @media screen and (max-width: 745px) {
   /* section-16 start */
 
