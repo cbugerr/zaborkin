@@ -98,6 +98,8 @@ body,
   margin-top: 64px;
   height: 483px;
   position: relative;
+  border: 1px solid blue;
+  position: relative;
 }
 .section-19::before {
   content: "";
@@ -113,21 +115,145 @@ body,
 }
 
 .section-19-container {
-  max-width: 1100px;
+  max-width: 1113px;
   margin: 0 auto;
   border: 1px solid red;
+  position: relative;
+
 }
 .section-19-reviews {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 54px; 
+  margin-bottom: 37px;
 }
 .section-19-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
   color: #FFFFFF;
+}
+
+.section-19-slider {
+  border: 3px solid blue;
+  max-width: 1113px;
+  overflow: hidden;
+}
+.section-19-slides {
+  border: 1px solid pink;
+  height: 100%;
+  width: 3339px;
+  transition: 0.5s;
+  display: flex;
+}
+.section-19-slide {
+  border: 3px solid blue;
+  display: flex;
+  max-width: 1113px;
+  
+}
+
+.section-19-left,
+.section-19-right {
+  width: 545px;
+  height: 262px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  padding: 40px 48px;
+}
+.section-19-left {
+  margin-right: 23px;
+}
+.section-19-person {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center; /*line опускается на середину*/
+}
+.section-19-person .background-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #E6F1D3;
+  position: relative;
+  overflow: hidden; /* скрывать всё за границами блока */
+}
+.section-19-person .left-image-person {
+  width: 49px;
+  height: 57.6px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.section-19-person .right-image-person {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.section-19-person .line {
+  width: 3px;
+  height: 40px;
+  background-color: #FFB13D;
+  margin-left: 15px;
+  margin-right: 20px;
+  
+}
+.section-19-text-person {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+
+}
+.section-19-text-person .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+  /* border: 1px solid red; */
+}
+.section-19-text-person .post {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #646464;
+  /* border: 1px solid red; */
+}
+.section-19-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #333333;
+  margin-top: 15px;
+}
+.section-19-control {
+  display: none;
+}
+.section-19-control:has(#control1:checked) ~ .section-19-slider .section-19-slides { transform: translateX(0px); }
+.section-19-control:has(#control2:checked) ~ .section-19-slider .section-19-slides { transform: translateX(-1113px); }
+
+.section-19-arrows .controls-sledes {
+  display: none; 
+}
+.section-19-control:has(#control1:checked) ~ .section-19-arrows .controls-slede1, 
+.section-19-control:has(#control2:checked) ~ .section-19-arrows .controls-slede2 {
+  display: flex;
+}
+
+.section-19-arrows .arrow-prev,
+.section-19-arrows .arrow-next {
+  width: 15.11px;
+  height: 23.43px;
+  position: absolute;
+  cursor: pointer;
+  top: 253px;
+}
+.section-19-arrows .arrow-prev {
+  left: -81px;
+}
+.section-19-arrows .arrow-next {
+  right: -81px;
 }
 /* section-19 end */
 
