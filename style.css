@@ -119,13 +119,12 @@ body,
   margin: 0 auto;
   border: 1px solid red;
   position: relative;
-
+  margin-top: 54px; 
 }
 .section-19-reviews {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 54px; 
   margin-bottom: 37px;
 }
 .section-19-title {
@@ -134,9 +133,8 @@ body,
   line-height: 46px;
   color: #FFFFFF;
 }
-
 .section-19-slider {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   max-width: 1113px;
   overflow: hidden;
 }
@@ -148,7 +146,7 @@ body,
   display: flex;
 }
 .section-19-slide {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   display: flex;
   max-width: 1113px;
   
@@ -196,7 +194,6 @@ body,
   background-color: #FFB13D;
   margin-left: 15px;
   margin-right: 20px;
-  
 }
 .section-19-text-person {
   /* border: 1px solid green; */
@@ -206,12 +203,16 @@ body,
   justify-content: center;
 
 }
-.section-19-text-person .name {
+.section-19-text-person .name,
+.section-19-text-person .name-2 {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   color: #333333;
   /* border: 1px solid red; */
+}
+.section-19-text-person .name-2 {
+  display: none;
 }
 .section-19-text-person .post {
   font-size: 13px;
@@ -220,15 +221,26 @@ body,
   color: #646464;
   /* border: 1px solid red; */
 }
-.section-19-text {
+.section-19-text,
+.section-19-text-2,
+.section-19-text-3,
+.section-19-text-4 {
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
   color: #333333;
   margin-top: 15px;
 }
-.section-19-control {
+.section-19-text-2,
+.section-19-text-3,
+.section-19-text-4 {
   display: none;
+}
+.section-19-control {
+  /* display: none; */
+  position: absolute;
+  bottom: -40px;
+  left: 506px;
 }
 .section-19-control:has(#control1:checked) ~ .section-19-slider .section-19-slides { transform: translateX(0px); }
 .section-19-control:has(#control2:checked) ~ .section-19-slider .section-19-slides { transform: translateX(-1113px); }
@@ -255,6 +267,10 @@ body,
 .section-19-arrows .arrow-next {
   right: -81px;
 }
+
+.section-19-slider-another {
+  display: none;
+}
 /* section-19 end */
 
 
@@ -268,6 +284,13 @@ body,
     right: -199px;
   }
   /* section-16 end */
+
+
+   /* section-19 start */
+  .section-19-arrows {
+    display: none;
+  }
+  /* section-19 end */
 }
 
 @media screen and (max-width: 1200px) {
@@ -298,6 +321,52 @@ body,
   }
 
   /* section-16 end */
+
+  /* section-19 start */
+  .section-19-container {
+    max-width: 668px;
+    margin-top: 54px; 
+  }
+  .section-19 {
+    height: 410px;
+  }
+  .section-19-slider {
+    max-width: 668px;
+    overflow: hidden;
+  }
+  .section-19-slides {
+    width: 1336px;
+  }
+  .section-19-left, 
+  .section-19-right {
+    width: 326px;
+    height: 238px;
+    padding: 24px 23px 20px;
+  }
+  .section-19-left {
+    margin-right: 16px;
+  }
+
+  .section-19-reviews { 
+    margin-bottom: 26px;
+  }
+  .section-19-title {
+    font-size: 28px;
+  }
+  .section-19-person .line {
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+  .section-19-text,
+  .section-19-text-person .name {
+    display: none;
+  }
+  .section-19-text-2,
+  .section-19-text-3,
+  .section-19-text-person .name-2 {
+    display: block;
+  }
+  /* section-19 end */
 }
 
 @media screen and (max-width: 900px) {
@@ -329,6 +398,13 @@ body,
     font-size: 13px;
   }
   /* section-16 end */
+
+
+  /* section-19 start */
+  .section-19::before {
+    background-size: 150% auto;
+  }
+  /* section-19 end */
 }
 @media screen and (max-width: 745px) {
   /* section-16 start */
@@ -374,4 +450,39 @@ body,
     margin-bottom: 23px;
   }
   /* section-16 end */
+
+}
+@media screen and (max-width: 668px) {
+
+  /* section-19 start */
+  .section-19-right {
+    display: none;
+  }
+  .section-19-container {
+    max-width: 668px;
+    margin-top: 22px; 
+  }
+  .section-19 {
+    height: 375px;
+  }
+  .section-19::before {
+    
+  }
+  .section-19-slider {
+    max-width: 343px;
+  }
+  .section-19-slides {
+    width: 686px;
+  }
+  .section-19-slide {
+    
+  }
+
+  .section-19-slider {
+    display: none;
+  }
+  .section-19-slider-another {
+    display: block;
+  }
+  /* section-19 end */
 }
