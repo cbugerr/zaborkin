@@ -10,14 +10,15 @@ body,
 
 .section-18-container {
   max-width: 1284px;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 25px 0 22px 490px;
+  padding: 25px 0 22px 480px;
   position: relative;
   background-color: #2E5235;
   border-radius: 16px;
   margin-top: 52px;
-  margin-inline: 40px;
+  margin-inline: auto;
   max-height: 215px;
   background-image: url(img/tools-hand.png);
   background-repeat: no-repeat;
@@ -68,7 +69,7 @@ body,
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .section-18-container {
     padding: 25px 10px 22px 280px;
     background-position: right top;
