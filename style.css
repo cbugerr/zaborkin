@@ -6,6 +6,8 @@ body,
   font-family: "Montserrat", sans-serif;
 }
 
+/*section-13 start*/
+
 .container{
   margin: 0 auto;
   max-width: 1285px;
@@ -203,10 +205,11 @@ padding: 5px;
   line-height: 100%;
 }
 
-
+/*section-13 end*/
 
 
 @media screen and (max-width: 1200px){
+  /* section-13 start*/
   .wrapper-checkbox{
     display: none;
   }
@@ -254,9 +257,13 @@ gap: 27px;
   margin-right: 24px;
 }
 
+/* section-13 end*/
+
 }
 
 @media screen and (max-width: 726px){
+
+  /* section-13 start*/
 .section-13__nav-mobile-btn{
   background-image: url(img/section-13/menu-tablet.png);
   width: 56px;
@@ -274,5 +281,6 @@ gap: 27px;
  margin-left: 12px;
  margin-right: 33px;
 }
+/* section-13 end*/
 }
 
