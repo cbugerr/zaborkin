@@ -11,6 +11,8 @@ body,
 .section-20 {
   background-color: #333333;
   border: 1px solid transparent;
+  max-width: 1285px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -64,7 +66,7 @@ body,
 }
 
 .footer-clients {
-  margin-top: 23px !important;
+  margin-top: 20px !important;
 }
 
 .footer-link {
@@ -174,7 +176,7 @@ body,
   .footer-contacts {
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 15px 0;
+    gap: 15px 28px;
     justify-content: flex-start;
     padding: 0;
   }
@@ -186,11 +188,6 @@ body,
     font-weight: 700;
     flex-basis: calc(50% - 14px);
     flex-shrink: 0;
-  }
-
-  .footer-phone:first-child {
-    margin-right: 28px;
-    
   }
 
   .footer-phone:nth-child(2) {
