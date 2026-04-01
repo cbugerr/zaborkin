@@ -613,6 +613,242 @@ label[for="auto"] {
 }
 
 /* section-16 end */
+
+
+/* section-19 start */
+.section-19 {
+  margin-top: 64px;
+  padding-top: 54px;
+  height: 483px;
+  position: relative;
+}
+.section-19::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.59)), url(img/section19/4948dcc4ddfe9c6b025abe48ac15c505b4d1100a\ \(1\).png);
+  transform: scaleX(-1);
+  background-size: 120% auto;
+  z-index: -1;
+}
+
+.section-19-container {
+  max-width: 1113px;
+  margin: 0 auto;
+  position: relative;
+}
+.section-19-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.section-19-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+.section-19-viewing {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #FFB13D;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.section-19-slider {
+  max-width: 1113px;
+  overflow: hidden;
+}
+.section-19-slides {
+  height: 100%;
+  width: 1113px;
+  transition: 0.5s;
+  display: flex;
+}
+.section-19-slide {
+  display: flex;
+  max-width: 1113px;
+}
+
+.section-19-left,
+.section-19-right {
+  width: 545px;
+  height: 262px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  padding: 40px 48px;
+}
+.section-19-left {
+  margin-right: 23px;
+}
+.section-19-person {
+  display: flex;
+  align-items: center;
+}
+.section-19-person .background-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #E6F1D3;
+  position: relative;
+  overflow: hidden; 
+}
+.section-19-person .left-image-person {
+  width: 49px;
+  height: 57.6px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.section-19-person .right-image-person {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.section-19-person .line {
+  width: 3px;
+  height: 40px;
+  background-color: #FFB13D;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.section-19-text-person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+
+}
+.section-19-text-person .name,
+.section-19-text-person .name-2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+}
+.section-19-text-person .name-2 {
+  display: none;
+}
+.section-19-text-person .post {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #646464;
+}
+.section-19-text,
+.section-19-text-2,
+.section-19-text-3,
+.section-19-text-4 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #333333;
+  margin-top: 15px;
+}
+.section-19-text-2,
+.section-19-text-3,
+.section-19-text-4 {
+  display: none;
+}
+.section-19-control {
+  display: none;
+}
+.section-19-control:has(#control1:checked) ~ .section-19-slider .section-19-slides { transform: translateX(0px); }
+
+.section-19-arrows .controls-sledes { display: none; }
+
+.section-19-control:has(#control1:checked) ~ .section-19-arrows .controls-slede1 {display: flex;}
+
+.section-19-arrows .arrow-prev,
+.section-19-arrows .arrow-next {
+  width: 15.11px;
+  height: 23.43px;
+  position: absolute;
+  cursor: pointer;
+  top: 200px;
+}
+.section-19-arrows .arrow-prev {
+  left: -81px;
+}
+.section-19-arrows .arrow-next {
+  right: -81px;
+}
+
+.section-19-slider-another {
+    display: none;
+    max-width: 668px;
+    overflow: hidden;
+  }
+  .section-19-slides-another {
+    width: 1336px;
+    display: flex;
+  }
+  .section-19-slide-another {
+    width: 668px;
+    display: flex;
+    justify-content: center;
+  }
+  .section-19-text-4 {
+    display: block;
+  }
+  .section-19-one,
+  .section-19-two {
+    width: 343px;
+    height: 238px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 24px 19px;
+  }
+  .section-19-person .one-image-person {
+    width: 49px;
+    height: 57.6px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+  .section-19-person .two-image-person {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  .section-19-control {
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    left: 200px;
+  }
+  .section-19-control input {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFB13D;
+    border-radius: 50%;
+    margin-right: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .section-19-control input:last-child {
+    margin-right: 0;
+  }
+  .section-19-control input:checked {
+    background: #FFB13D;
+  }
+
+  .section-19-control:has(#control1:checked) ~ 
+  .section-19-slider-another 
+  .section-19-slides-another { transform: translateX(0px); }
+  .section-19-control:has(#control2:checked) ~ 
+  .section-19-slider-another  
+  .section-19-slides-another { transform: translateX(-668px); }
+/* section-19 end */
+
+
 @media screen and (max-width: 1256px) {
   /* section-16 start */
   .section-16-container {
@@ -623,6 +859,13 @@ label[for="auto"] {
     right: -199px;
   }
   /* section-16 end */
+
+
+   /* section-19 start */
+  .section-19-arrows {
+    display: none;
+  }
+  /* section-19 end */
 }
 
 @media screen and (max-width: 1200px) {
@@ -653,6 +896,52 @@ label[for="auto"] {
   }
 
   /* section-16 end */
+
+  /* section-19 start */
+  .section-19-container {
+    max-width: 668px;
+  }
+  .section-19 {
+    height: 410px;
+    padding-top: 28px;
+  }
+  .section-19-slider {
+    max-width: 668px;
+    overflow: hidden;
+  }
+  .section-19-slides {
+    width: 668px;
+  }
+  .section-19-left, 
+  .section-19-right {
+    width: 326px;
+    height: 238px;
+    padding: 24px 23px 20px;
+  }
+  .section-19-left {
+    margin-right: 16px;
+  }
+
+  .section-19-reviews { 
+    margin-bottom: 26px;
+  }
+  .section-19-title {
+    font-size: 28px;
+  }
+  .section-19-person .line {
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+  .section-19-text,
+  .section-19-text-person .name-right {
+    display: none;
+  }
+  .section-19-text-2,
+  .section-19-text-3,
+  .section-19-text-person .name-2 {
+    display: block;
+  }
+  /* section-19 end */
 }
 
 @media screen and (max-width: 1199px) {
@@ -715,6 +1004,51 @@ label[for="auto"] {
     font-size: 13px;
   }
   /* section-16 end */
+
+
+  /* section-19 start */
+  .section-19::before {
+    background-size: 140% auto;
+  }
+  /* section-19 end */
+}
+
+@media screen and (max-width: 800px) {
+
+  /* section-19 start */
+  .section-19::before {
+    background-size: 180%;
+    background-position: 50% 10%;
+  }
+  .section-19-container {
+    max-width: 668px;
+
+  }
+  .section-19 {
+    padding-top: 28px;
+    height: 470px;
+  }
+
+  .section-19-reviews {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+  .section-19-title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  .section-19-slider {
+    display: none;
+  }
+  .section-19-slider-another {
+  display: block;
+  }
+  .section-19-control {
+    display: block;
+  }
+  /* section-19 end */
 }
 
 @media screen and (max-width: 847px) {
@@ -731,7 +1065,6 @@ label[for="auto"] {
 
 @media screen and (max-width: 745px) {
   /* section-16 start */
-
   .section-16-container {
     flex-direction: column;
     max-height: 375px;
@@ -773,4 +1106,48 @@ label[for="auto"] {
     margin-bottom: 23px;
   }
   /* section-16 end */
+
+}
+@media screen and (max-width: 668px) {
+
+  /* section-19 start */
+  .section-19::before {
+    background-size: 250% auto;
+    background-position: 50% 5%;
+  }
+  .section-19-container {
+    max-width: 375px;
+  }
+  .section-19 {
+    padding-top: 22px;
+    height: 499px;
+  }
+  .section-19-title {
+    text-align: center;
+  }
+  .section-19-slider-another {
+    max-width: 375px;
+  }
+  .section-19-slides-another {
+    width: 750px;
+  }
+  .section-19-slide-another {
+    width: 375px;
+  }
+  .section-19-control {
+    left: 70px;
+  }
+  .section-19-control:has(#control2:checked) ~ 
+  .section-19-slider-another  
+  .section-19-slides-another { transform: translateX(-375px); }
+  /* section-19 end */
+}
+@media screen and (max-width: 490px) {
+
+  /* section-19 start */
+  .section-19::before {
+    background-size: 350% auto;
+    background-position: 50% 5%;
+  }
+  /* section-19 end */
 }
