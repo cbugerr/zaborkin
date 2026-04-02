@@ -572,6 +572,10 @@ body,
 .section-20 {
   background-color: #333333;
   border: 1px solid transparent;
+  
+}
+
+.footer-container {
   max-width: 1285px;
   margin: 0 auto;
 }
